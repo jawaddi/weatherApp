@@ -23,13 +23,13 @@ const updateUI = (data) => {
   // we garantie that in the beginning we won't show our card
   card.classList.remove("d-none");
   // check if day or night
-  let timeSrc = weather.IsDayTime ? "/img/day.svg" : "/img/night.svg";
+  let timeSrc = weather.IsDayTime ? "img/day.svg" : "img/night.svg";
 
   // we can use setAttribute property
   // display if day or night
   time.src = timeSrc;
   // display weather icon
-  icon.src = `/img/icons/${weather.WeatherIcon}.svg`;
+  icon.src = `img/icons/${weather.WeatherIcon}.svg`;
 };
 
 // this function is responsible to return our data after we give it the name of the city and it's async function
